@@ -1,0 +1,16 @@
+#include "zcommon.acs"
+
+// Movement
+Script "dc_m_stop" (void) {
+	Thing_Stop(0);
+}
+
+Script "+dc_m_gravity" (void) {
+	SetActorFlag(0, "NOGRAVITY", false);
+}
+
+Script "-dc_m_gravity" (void) {
+	SetActorFlag(0, "NOGRAVITY", true);
+}
+
+// Environment

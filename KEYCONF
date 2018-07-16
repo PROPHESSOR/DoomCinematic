@@ -1,0 +1,24 @@
+AddKeySection " == Doom Cinematic == " dcmenu
+AddKeySection " Camera " dccamera
+    AddMenuKey "Turn 180" turn180
+	AddMenuKey "Fly up" "+moveup"
+	AddMenuKey "Fly down" "+movedown"
+	AddMenuKey "Zoom" "+dczoom"
+		Alias "+dczoom" "fov 25; rebind -dczoom"
+		Alias "-dczoom" "fov 90; rebind +dczoom"
+	AddMenuKey "Stop" "dc_m_stop"
+		Alias "dc_m_stop" "pukename dc_m_stop"
+	AddMenuKey "Gravity" "+dc_m_gravity"
+		Alias "+dc_m_gravity" "pukename +dc_m_gravity; rebind -dc_m_gravity"
+		Alias "-dc_m_gravity" "pukename -dc_m_gravity; rebind +dc_m_gravity"
+AddKeySection " Speed control " dcspeed
+	AddMenuKey "+ 1" s_p1
+	AddMenuKey "- 1" s_m1
+	AddMenuKey "+ 5" s_p5
+	AddMenuKey "- 5" s_m5
+	AddMenuKey "+10" s_p10
+	AddMenuKey "-10" s_m10
+	AddMenuKey "Faster" s_faster
+	AddMenuKey "Slower" s_slower
+	
+    defaultbind F toggleflashlight
